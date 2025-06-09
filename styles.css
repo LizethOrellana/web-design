@@ -125,6 +125,16 @@ button:hover {
     transform: translateY(-50%);
 }
 
+.galeria-componentes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 .controles button {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -286,13 +296,20 @@ button:hover {
 }
 
 .componente-preview {
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
+    margin-left: 0.5%;
 }
 
 .componente-preview img {
@@ -319,11 +336,12 @@ button:hover {
 }
 
 .modal-contenido {
-    background: #fff;
-    margin: 60px auto;
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: auto;
     padding: 20px;
-    width: 80%;
-    max-width: 800px;
+    background-color: white;
     border-radius: 10px;
     position: relative;
 }
@@ -405,18 +423,17 @@ button:hover {
 
 .tabcodigo {
     display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .tabcodigo.activo {
     display: block;
-}
-
-.componente-preview {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    width: 300px;
-    margin: 20px;
 }
 
 .preview-ejecutable {
@@ -483,24 +500,15 @@ button:hover {
     color: white;
 }
 
-.tabcodigo {
-    display: none;
-}
 
 .tabcodigo.activo {
     display: block;
 }
 
 .tabcodigo pre {
-    min-height: 150px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-family: monospace;
     white-space: pre-wrap;
-    overflow-x: auto;
-    color: #333;
+    /* O usa pre si prefieres scroll horizontal */
+    word-wrap: break-word;
+    font-family: monospace;
     font-size: 14px;
-    line-height: 1.5;
 }

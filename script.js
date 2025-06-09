@@ -2,12 +2,12 @@
 // Cambio de pestañas
 // ---------------------
 function cambiarPestana(id) {
-    const secciones = document.querySelectorAll('.pestana');
-    secciones.forEach(sec => sec.classList.remove('activa'));
-    const activa = document.getElementById(id);
-    if (activa) {
-        activa.classList.add('activa');
-    }
+  const secciones = document.querySelectorAll('.pestana');
+  secciones.forEach(sec => sec.classList.remove('activa'));
+  const activa = document.getElementById(id);
+  if (activa) {
+    activa.classList.add('activa');
+  }
 }
 
 // ---------------------
@@ -17,69 +17,69 @@ let slideIndex = 0;
 const slides = document.querySelectorAll(".carrusel-img");
 
 function mostrarSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove("activa");
-        if (i === index) slide.classList.add("activa");
-    });
+  slides.forEach((slide, i) => {
+    slide.classList.remove("activa");
+    if (i === index) slide.classList.add("activa");
+  });
 }
 
 function cambiarSlide(n) {
-    slideIndex += n;
-    if (slideIndex < 0) slideIndex = slides.length - 1;
-    if (slideIndex >= slides.length) slideIndex = 0;
-    mostrarSlide(slideIndex);
+  slideIndex += n;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  if (slideIndex >= slides.length) slideIndex = 0;
+  mostrarSlide(slideIndex);
 }
 
 setInterval(() => {
-    cambiarSlide(1);
+  cambiarSlide(1);
 }, 5000);
 
 // ---------------------
 // Copiar código genérico
 // ---------------------
 function copiarCodigo(id) {
-    const codigo = document.getElementById(id);
-    const texto = codigo.innerText;
-    navigator.clipboard.writeText(texto).then(() => {
-        alert("¡Código copiado!");
-    }).catch(err => {
-        console.error("Error al copiar: ", err);
-    });
+  const codigo = document.getElementById(id);
+  const texto = codigo.innerText;
+  navigator.clipboard.writeText(texto).then(() => {
+    alert("¡Código copiado!");
+  }).catch(err => {
+    console.error("Error al copiar: ", err);
+  });
 }
 
 // ---------------------
 // Todo cuando el DOM esté listo
 // ---------------------
 document.addEventListener("DOMContentLoaded", () => {
-    // Validación de formulario
-    const form = document.getElementById("contactForm");
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const nombre = document.getElementById("nombre").value.trim();
-            const correo = document.getElementById("correo").value.trim();
-            const mensaje = document.getElementById("mensaje").value.trim();
-            const mensajeValidacion = document.getElementById("mensaje-validacion");
+  // Validación de formulario
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+      const mensajeValidacion = document.getElementById("mensaje-validacion");
 
-            if (!nombre || !correo || !mensaje) {
-                mensajeValidacion.textContent = "Por favor, completa todos los campos.";
-                mensajeValidacion.style.color = "red";
-            } else {
-                mensajeValidacion.textContent = "¡Mensaje enviado correctamente!";
-                mensajeValidacion.style.color = "green";
-                this.reset();
-            }
-        });
-    }
+      if (!nombre || !correo || !mensaje) {
+        mensajeValidacion.textContent = "Por favor, completa todos los campos.";
+        mensajeValidacion.style.color = "red";
+      } else {
+        mensajeValidacion.textContent = "¡Mensaje enviado correctamente!";
+        mensajeValidacion.style.color = "green";
+        this.reset();
+      }
+    });
+  }
 
-    const componentes = {
-        glass: {
-            titulo: "Glass Effect Card",
-            html: `<div class="card">
+  const componentes = {
+    glass: {
+      titulo: "Glass Effect Card",
+      html: `<div class="card">
   <h3>GLASS<br> EFFECT</h3>
   <p>JOE WATSON<br>0000 0000 0000 0000<br>VALID 01/28</p>
 </div>`,
-            css: `.card {
+      css: `.card {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -88,10 +88,10 @@ document.addEventListener("DOMContentLoaded", () => {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }`
-        },
-        neon: {
-            titulo: "Neon Button",
-            html: `<!-- From Uiverse.io by Smit-Prajapati --> 
+    },
+    neon: {
+      titulo: "Neon Button",
+      html: `
 <div class="card">
   <div class="background">
   </div>
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </svg></span></div>
   <div class="box box4"></div>
 </div>`,
-            css: `/* From Uiverse.io by Smit-Prajapati */ 
+      css: `
 .card {
   position: relative;
   width: 200px;
@@ -265,42 +265,297 @@ document.addEventListener("DOMContentLoaded", () => {
   right: 20px;
 }
 }`
+    },
+    button: {
+      titulo: "Button",
+      html: '<button class="btn">3D button</button>',
+      css: `
+      .btn {
+        --color1: #1a8516;
+        --color2: #236b19;
+        perspective: 1000px;
+        padding: 1em 1em;
+        background: linear-gradient(var(--color1), var(--color2));
+        border: none;
+        outline: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        text-shadow: 0 10px 10px #000;
+        cursor: pointer;
+        transform: rotateX(70deg) rotateZ(30deg);
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+      }
+
+      .btn::before {
+        content: "";
+        width: 100%;
+        height: 15px;
+        background-color: var(--color2);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+      }
+
+      .btn::after {
+        content: "";
+        width: 15px;
+        height: 100%;
+        background-color: var(--color1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotateY(-90deg);
+        transform-origin: right;
+      }
+
+      .btn:hover {
+        transform: rotateX(30deg) rotateZ(0);
+      }
+      `
+    },
+    button2: {
+      title: "Button 2",
+      html: `<button><span></span>button</button>`,
+      css: `button {
+  padding: 0.9em 1.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: transparent;
+  border: 3px solid #ff0;
+  font-size: 14px;
+  position: relative;
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+button::before {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  color: #ff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+button:hover::before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+
+button::after {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  color: #ff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0) rotateY(0deg);
+  opacity: 0;
+}
+
+button:hover::after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
+}`
+    },
+    button3: {
+      title: "button3",
+      html: `
+      <button class="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </button>`,
+      css: `
+        .button {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: rgb(20, 20, 20);
+          border: none;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+          cursor: pointer;
+          transition-duration: 0.3s;
+          overflow: hidden;
+          position: relative;
         }
-    };
 
-    window.abrirModalComponente = function (nombre) {
-        const comp = componentes[nombre];
-        if (!comp) return;
+        .svgIcon {
+          width: 12px;
+          transition-duration: 0.3s;
+        }
 
-        const htmlPre = document.getElementById("codigo-html");
-        const cssPre = document.getElementById("codigo-css");
+        .svgIcon path {
+          fill: white;
+        }
 
-        htmlPre.textContent = comp.html;
-        cssPre.textContent = comp.css;
+        .button:hover {
+          width: 140px;
+          border-radius: 50px;
+          transition-duration: 0.3s;
+          background-color: rgb(181, 160, 255);
+          align-items: center;
+        }
 
-        document.getElementById("titulo-componente").textContent = comp.titulo;
-        document.getElementById("modal-codigo").style.display = "block";
-        window.mostrarTab("html", document.querySelector(".tablink:nth-child(1)"));
-    };
+        .button:hover .svgIcon {
+          /* width: 20px; */
+          transition-duration: 0.3s;
+          transform: translateY(-200%);
+        }
 
-    window.cerrarModalCodigo = function () {
-        document.getElementById("modal-codigo").style.display = "none";
-    };
+        .button::before {
+          position: absolute;
+          bottom: -20px;
+          content: "Back to Top";
+          color: white;
+          /* transition-duration: .3s; */
+          font-size: 0px;
+        }
 
-    window.mostrarTab = function (tipo, btn) {
-        document.querySelectorAll(".tablink").forEach(b => b.classList.remove("activo"));
-        document.querySelectorAll(".tabcodigo").forEach(div => div.classList.remove("activo"));
+        .button:hover::before {
+          font-size: 13px;
+          opacity: 1;
+          bottom: unset;
+          /* transform: translateY(-30px); */
+          transition-duration: 0.3s;
+        }`,
+    },
+    colors: {
+      title: "Card Colors",
+      html: `
+            <div class="card">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+              <div class="card__content">
+                <p class="card__title">Card Title
+                </p><p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </div>
+      `,
+      css: `
+          .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+          }
 
-        if (btn) btn.classList.add("activo");
-        document.getElementById(`tab-${tipo}`).classList.add("activo");
-    };
+          .card svg {
+            width: 48px;
+            fill: #333;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+          }
 
-    window.copiarCodigoActivo = function () {
-        const activo = document.querySelector(".tabcodigo.activo pre");
-        const texto = activo.textContent;
-        navigator.clipboard.writeText(texto).then(() => {
-            alert("¡Código copiado!");
-        });
-    };
+          .card:hover {
+            transform: rotate(-5deg) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+
+          .card__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+          }
+
+          .card:hover .card__content {
+            transform: translate(-50%, -50%) rotate(0deg);
+            opacity: 1;
+          }
+
+          .card__title {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            font-weight: 700;
+          }
+
+          .card__description {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #777;
+            line-height: 1.4;
+          }
+
+          .card:hover svg {
+            scale: 0;
+            transform: rotate(-45deg);
+          }`
+    }
+  };
+
+  window.abrirModalComponente = function (nombre) {
+    const comp = componentes[nombre];
+    if (!comp) return;
+
+    const htmlPre = document.getElementById("codigo-html");
+    const cssPre = document.getElementById("codigo-css");
+
+    htmlPre.textContent = comp.html;
+    cssPre.textContent = comp.css;
+
+    document.getElementById("titulo-componente").textContent = comp.titulo;
+    document.getElementById("modal-codigo").style.display = "block";
+    window.mostrarTab("html", document.querySelector(".tablink:nth-child(1)"));
+  };
+
+  window.cerrarModalCodigo = function () {
+    document.getElementById("modal-codigo").style.display = "none";
+  };
+
+  window.mostrarTab = function (tipo, btn) {
+    document.querySelectorAll(".tablink").forEach(b => b.classList.remove("activo"));
+    document.querySelectorAll(".tabcodigo").forEach(div => div.classList.remove("activo"));
+
+    if (btn) btn.classList.add("activo");
+    document.getElementById(`tab-${tipo}`).classList.add("activo");
+  };
+
+  window.copiarCodigoActivo = function () {
+    const activo = document.querySelector(".tabcodigo.activo pre");
+    const texto = activo.textContent;
+    navigator.clipboard.writeText(texto).then(() => {
+      alert("¡Código copiado!");
+    });
+  };
 
 });
