@@ -1,0 +1,15 @@
+<h1>Diseña tu Página</h1>
+<div class="diseñador-paneles">
+    <div class="panel-controles">
+        <button class="button-design" onclick="agregarSeccion('texto')">➕ Texto</button>
+        <button class="button-design" onclick="agregarSeccion('imagen')">🖼 Imagen</button>
+        <button class="button-design" onclick="agregarSeccion('fondo')">🎨 Cambiar Fondo</button>
+        <button class="button-design" onclick="document.getElementById('subirImagenInput').click()">🖼
+            Subir Imagen</button>
+        <input class="button-design" type="file" id="subirImagenInput" accept="image/*" style="display: none;" />
+
+    </div>
+    <div id="preview" class="preview-diseno">
+        <!-- Aquí se irán agregando dinámicamente las secciones -->
+    </div>
+</div>

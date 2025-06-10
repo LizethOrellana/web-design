@@ -1,0 +1,22 @@
+[
+    {
+        "menu": "Home",
+        "src": "htmls/home.html"
+    },
+    {
+        "menu": "Componentes",
+        "src": "htmls/componentes.html"
+    },
+    {
+        "menu": "Diseñador",
+        "src": "htmls/diseniador.html"
+    },
+    {
+        "menu": "Sobre Nosotras",
+        "src": "htmls/sobre_nosotras.html"
+    },
+    {
+        "menu": "Contacto",
+        "src": "htmls/contacto.html"
+    }
+]

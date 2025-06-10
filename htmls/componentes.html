@@ -1,96 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-    <div class="contenedor">
-        <aside class="menu-lateral">
-            <h2>Menú</h2>
-            <ul>
-                <li onclick="cambiarPestana('inicio')">Inicio</li>
-                <li onclick="cambiarPestana('componentes')">Componentes</li>
-                <li onclick="cambiarPestana('sobre-mi')">Sobre Mí</li>
-                <li onclick="cambiarPestana('contacto')">Contacto</li>
-            </ul>
-        </aside>
-
-        <main class="contenido">
-            <section id="inicio" class="pestana activa">
-                <h1>¡Bienvenido a tu Diseñador Web Personal!</h1>
-                <div class="carrusel">
-                    <img src="assets/img1.jpeg" class="carrusel-img activa" alt="Diseño 1" />
-                    <img src="assets/img2.png" class="carrusel-img" alt="Diseño 2" />
-                    <img src="assets/img3.png" class="carrusel-img" alt="Diseño 3" />
-
-                    <div class="controles">
-                        <button onclick="cambiarSlide(-1)">⟨</button>
-                        <button onclick="cambiarSlide(1)">⟩</button>
-                    </div>
-                </div>
-                <div class="presentacion">
-                    <p class="intro animado">
-                        Esta página ha sido creada para ayudarte a <strong>diseñar</strong> y
-                        <strong>visualizar</strong> tu propia página web de forma <strong>simple</strong> y
-                        <strong>rápida</strong>.
-                    </p>
-
-                    <h3 class="animado">¿Qué puedes hacer aquí?</h3>
-
-                    <div class="tarjetas-beneficios">
-                        <div class="tarjeta animado">
-                            <span>🎨</span>
-                            <h4>Personaliza tu diseño</h4>
-                            <p>Colores, imágenes y secciones ajustables para tu estilo único.</p>
-                        </div>
-                        <div class="tarjeta animado">
-                            <span>👁️</span>
-                            <h4>Vista previa en vivo</h4>
-                            <p>Observa los cambios en tiempo real mientras editas tu sitio.</p>
-                        </div>
-                        <div class="tarjeta animado">
-                            <span>📝</span>
-                            <h4>Modifica todo fácilmente</h4>
-                            <p>Edita textos, imágenes y formularios con solo unos clics.</p>
-                        </div>
-                        <div class="tarjeta animado">
-                            <span>🚀</span>
-                            <h4>Listo para publicar</h4>
-                            <p>Exporta tu página y compártela en la web cuando esté lista.</p>
-                        </div>
-                        <div class="tarjeta animado">
-                            <span>🔧</span>
-                            <h4>Componentes reutilizables</h4>
-                            <p>Diseña con bloques que puedes usar en distintas partes del sitio.</p>
-                        </div>
-                        <div class="tarjeta animado">
-                            <span>💾</span>
-                            <h4>Guarda y continúa</h4>
-                            <p>Guarda tu progreso y sigue editando cuando lo necesites.</p>
-                        </div>
-                    </div>
-
-                    <p class="intro animado">
-                        Usa el menú lateral para navegar entre las secciones. ¡Explora y comienza a construir!
-                    </p>
-                </div>
-
-
-                <div class="imagen-home">
-                    <img src="https://inbound.actualizaweb.com/hs-fs/hubfs/20171018-9-pasos-para-p%C3%A1gina-web/Dise%C3%B1ar%20p%C3%A1ginas%20Web,%20Dise%C3%B1o%20P%C3%A1ginas%20Web.jpg?width=640&name=Dise%C3%B1ar%20p%C3%A1ginas%20Web,%20Dise%C3%B1o%20P%C3%A1ginas%20Web.jpg"
-                        alt="Vista previa del diseño" />
-                </div>
-            </section>
-            <section id="componentes" class="pestana">
-                <h1>Galería de Componentes</h1>
-                <div class="galeria-componentes">
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+<h1>Galería de Componentes</h1>
+<div class="galeria-componentes">
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                         <style>
                             body {
                             background: #1a1a1a;
@@ -114,13 +25,13 @@
                             <h3>GLASS<br> EFFECT</h3>
                             <p>JOE WATSON<br>0000 0000 0000 0000<br>VALID 01/28</p>
                         </div>'>
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('glass')">👁 Ver Código</button>
-                    </div>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('glass')">👁 Ver Código</button>
+    </div>
 
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                         <style>
                             .card {
                             position: relative;
@@ -294,13 +205,13 @@
                             </svg></span></div>
                         <div class="box box4"></div>
                         </div>'>
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('neon')">👁 Ver Código</button>
-                    </div>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('neon')">👁 Ver Código</button>
+    </div>
 
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                             <style>
                                 .btn {
                                 --color1: #1a8516;
@@ -352,13 +263,13 @@
                             </style>
 
                                 <button class="btn">3D button</button>'>
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('button')">👁 Ver Código</button>
-                    </div>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('button')">👁 Ver Código</button>
+    </div>
 
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                             <style>
                             button {
                             padding: 0.9em 1.8em;
@@ -421,13 +332,13 @@
                             </style>
                             <button><span></span>button</button>'>
 
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('button2')">👁 Ver Código</button>
-                    </div>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('button2')">👁 Ver Código</button>
+    </div>
 
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                             <style>
                                 .button {
                                 width: 50px;
@@ -497,13 +408,13 @@
                             </svg>
                             </button>'>
 
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('button3')">👁 Ver Código</button>
-                    </div>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('button3')">👁 Ver Código</button>
+    </div>
 
-                    <div class="componente-preview">
-                        <iframe class="preview-ejecutable" srcdoc='
+    <div class="componente-preview">
+        <iframe class="preview-ejecutable" srcdoc='
                             <style>
                                 .card {
                                 position: relative;
@@ -576,60 +487,31 @@
                             </div>
                             '>
 
-                        </iframe>
+        </iframe>
 
-                        <button class="ver-codigo-btn" onclick="abrirModalComponente('colors')">👁 Ver Código</button>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- Modal -->
-            <div id="modal-codigo" class="modal">
-                <div class="modal-contenido">
-                    <span class="cerrar" onclick="cerrarModalCodigo()">&times;</span>
-                    <h2 id="titulo-componente">Código del Componente</h2>
-
-                    <div class="tabs">
-                        <button class="tablink activo" onclick="mostrarTab('html', this)">HTML</button>
-                        <button class="tablink" onclick="mostrarTab('css', this)">CSS</button>
-                    </div>
-
-                    <div id="tab-html" class="tabcodigo activo">
-                        <pre id="codigo-html"></pre>
-                    </div>
-                    <div id="tab-css" class="tabcodigo">
-                        <pre id="codigo-css"></pre>
-                    </div>
-
-                    <button onclick="copiarCodigoActivo()">📋 Copiar Código</button>
-                </div>
-            </div>
-
-
-
-
-            <section id="sobre-mi" class="pestana">
-                <h1>Sobre Mí</h1>
-                <p>Aquí puedes hablar de ti y tus proyectos.</p>
-                <img src="tu-foto.jpg" alt="Tu Foto" class="foto-personal" />
-            </section>
-
-            <section id="contacto" class="pestana">
-                <h1>Contáctame</h1>
-                <form id="contactForm">
-                    <input type="text" id="nombre" placeholder="Tu nombre" required />
-                    <input type="email" id="correo" placeholder="Tu correo" required />
-                    <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-                <p id="mensaje-validacion"></p>
-            </section>
-        </main>
+        <button class="ver-codigo-btn" onclick="abrirModalComponente('colors')">👁 Ver Código</button>
     </div>
 
-    <script src="script.js"></script>
-</body>
+</div>
 
-</html>
+<!-- Modal -->
+<div id="modal-codigo" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModalCodigo()">&times;</span>
+        <h2 id="titulo-componente">Código del Componente</h2>
+
+        <div class="tabs">
+            <button class="tablink activo" onclick="mostrarTab('html', this)">HTML</button>
+            <button class="tablink" onclick="mostrarTab('css', this)">CSS</button>
+        </div>
+
+        <div id="tab-html" class="tabcodigo activo">
+            <pre id="codigo-html"></pre>
+        </div>
+        <div id="tab-css" class="tabcodigo">
+            <pre id="codigo-css"></pre>
+        </div>
+
+        <button onclick="copiarCodigoActivo()">📋 Copiar Código</button>
+    </div>
+</div>
