@@ -1,0 +1,30 @@
+{
+    "titulo": "Sobre Nosotros",
+    "descripcion": "Somos una empresa apasionada por la innovación y la excelencia. Creemos en el poder de la tecnología para transformar vidas.",
+    "mision": {
+        "titulo": "Nuestra Misión",
+        "descripcion": "Proporcionar soluciones digitales de alto impacto que ayuden a nuestros clientes a alcanzar sus objetivos."
+    },
+    "vision": {
+        "titulo": "Nuestra Visión",
+        "descripcion": "Ser líderes en transformación digital, siendo reconocidos por nuestra creatividad, calidad y compromiso."
+    },
+    "valores": [
+        {
+            "titulo": "Compromiso",
+            "descripcion": "Nos dedicamos plenamente a cada proyecto y cliente."
+        },
+        {
+            "titulo": "Innovación",
+            "descripcion": "Siempre estamos buscando nuevas formas de mejorar y avanzar."
+        },
+        {
+            "titulo": "Excelencia",
+            "descripcion": "Nos esforzamos por ofrecer resultados que superen expectativas."
+        },
+        {
+            "titulo": "Transparencia",
+            "descripcion": "Creemos en la comunicación abierta y honesta en todo momento."
+        }
+    ]
+}

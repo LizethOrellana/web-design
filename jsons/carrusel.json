@@ -1,14 +1,14 @@
 [
     {
-        "src": "assets/img1.jpg",
+        "src": "../assets/img1.jpg",
         "alt": "Diseño 1"
     },
     {
-        "src": "assets/img2.png",
+        "src": "../assets/img2.png",
         "alt": "Diseño 2"
     },
     {
-        "src": "assets/img3.png",
+        "src": "../assets/img3.png",
         "alt": "Diseño 3"
     }
 ]

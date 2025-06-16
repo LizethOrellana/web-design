@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <!-- ⬅️ AQUÍ VA EL MENÚ - SOLO AQUÍ -->
+        <aside class="menu-lateral">
+            <ul id="menu_lista"></ul>
+        </aside>
+        <div class="usuario-barra" id="usuario-barra" style="display: none;">
+            <span id="usuario-nombre"></span>
+            <button class="button" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+
+        <!-- ⬇️ AQUÍ SE CARGA CADA PÁGINA -->
+        <section class="pagina" id="pagina"></section>
+
+
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <h2 class="footer-logo">PurpleTech</h2>
+        <p>Innovación y tecnología al alcance de tus manos.</p>
+        <p class="footer-creditos">© 2025 PurpleTech. Desarrollado por el equipo creativo 💜</p>
+    </div>
+</footer>
+
+<script>
+    if (!localStorage.getItem("email")) {
+        window.location.href = "login.html";
+    }
+</script>
+
+</html>

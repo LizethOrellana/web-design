@@ -1,0 +1,48 @@
+{
+    "titulo": "PurpleTech",
+    "introduccion": "Bienvenido a <strong>PurpleTech</strong>, tu tienda en línea para encontrar lo último en <strong>tecnología</strong>, <strong>innovación</strong> y <strong>estilo</strong> digital.",
+    "beneficios": [
+        {
+            "icono": "💻",
+            "titulo": "Tecnología de punta",
+            "descripcion": "Encuentra laptops, tablets, smartwatches y más de las mejores marcas."
+        },
+        {
+            "icono": "⚡",
+            "titulo": "Entrega rápida",
+            "descripcion": "Procesamos tus pedidos de forma ágil para que los recibas cuanto antes."
+        },
+        {
+            "icono": "🔒",
+            "titulo": "Compra segura",
+            "descripcion": "Tus datos están protegidos con los estándares más altos de seguridad."
+        },
+        {
+            "icono": "📞",
+            "titulo": "Soporte personalizado",
+            "descripcion": "Te asesoramos antes, durante y después de tu compra."
+        },
+        {
+            "icono": "🎁",
+            "titulo": "Promociones exclusivas",
+            "descripcion": "Disfruta de descuentos y lanzamientos especiales cada semana."
+        },
+        {
+            "icono": "🛒",
+            "titulo": "Carrito inteligente",
+            "descripcion": "Guarda tus productos favoritos y recibe alertas de precio."
+        },
+        {
+            "icono": "🌐",
+            "titulo": "Acceso global",
+            "descripcion": "Realiza compras desde cualquier lugar del mundo con envíos internacionales."
+        },
+        {
+            "icono": "💬",
+            "titulo": "Reseñas reales",
+            "descripcion": "Consulta opiniones de otros clientes antes de tomar una decisión."
+        }
+    ],
+    "final": "Explora las categorías del menú y descubre productos pensados para ti. ¡Bienvenido a la era tecnológica con PurpleTech!",
+    "imagenHome": "../assets/publicidad.jpg"
+}

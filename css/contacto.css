@@ -1,0 +1,139 @@
+.contactame {
+    height: 100%;
+    background: linear-gradient(135deg, #e7d8ff, #f7f1ff);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #caa9ff;
+    animation: fadeIn 1s ease;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #6d28d9;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.form-contacto {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    position: relative;
+}
+
+.campo i {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #7c3aed;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border: 1px solid #8a63d2;
+}
+
+.form-contacto button {
+    background-color: #7c3aed;
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-contacto button:hover {
+    background-color: #5b21b6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    margin-left: 40%;
+    width: 20%;
+    font-family: inherit;
+    font-size: small;
+    background: #7c3aed;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}

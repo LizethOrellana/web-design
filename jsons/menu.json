@@ -1,22 +1,26 @@
 [
     {
         "menu": "Home",
-        "src": "htmls/home.html"
+        "src": "home.html"
     },
     {
-        "menu": "Componentes",
-        "src": "htmls/componentes.html"
+        "menu": "Productos",
+        "src": "productos.html"
     },
     {
-        "menu": "Diseñador",
-        "src": "htmls/diseniador.html"
+        "menu": "Listar Productos",
+        "src": "lista_productos.html"
+    },
+    {
+        "menu": "Listar Usuarios",
+        "src": "lista_usuarios.html"
     },
     {
         "menu": "Sobre Nosotras",
-        "src": "htmls/sobre_nosotras.html"
+        "src": "nosotros.html"
     },
     {
         "menu": "Contacto",
-        "src": "htmls/contacto.html"
+        "src": "contacto.html"
     }
 ]

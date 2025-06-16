@@ -1,32 +1,272 @@
 [
     {
-        "titulo": "Glass Effect Card",
-        "html": "<div class=\"card\">\n  <h3>GLASS<br> EFFECT</h3>\n  <p>JOE WATSON<br>0000 0000 0000 0000<br>VALID 01/28</p>\n</div>",
-        "css": ".card {\n  background: rgba(255, 255, 255, 0.15);\n  backdrop-filter: blur(10px);\n  border-radius: 10px;\n  padding: 20px;\n  width: 220px;\n  color: white;\n  border: 1px solid rgba(255, 255, 255, 0.3);\n}"
+        "nombre": "Auriculares Bluetooth Noise X200",
+        "precio": 59.99,
+        "imagen": "../assets/productos/auriculares_x200.jpg",
+        "categoria": "Audio",
+        "descripcion_corta": "Sonido envolvente y cancelación de ruido activa.",
+        "stock": 25,
+        "estado": "activo"
     },
     {
-        "titulo": "Neon Button",
-        "html": "<div class=\"card\">\n  <div class=\"background\"></div>\n  <div class=\"logo\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 29.667 31.69\" class=\"logo-svg\">...</svg>\n  </div>\n  <div class=\"box box1\"><span class=\"icon\"><svg class=\"svg\">...</svg></span></div>\n  <div class=\"box box2\"><span class=\"icon\"><svg class=\"svg\">...</svg></span></div>\n  <div class=\"box box3\"><span class=\"icon\"><svg class=\"svg\">...</svg></span></div>\n  <div class=\"box box4\"></div>\n</div>",
-        "css": ".card {\n  position: relative;\n  width: 200px;\n  height: 200px;\n  background: lightgrey;\n  border-radius: 30px;\n  overflow: hidden;\n  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n  transition: all 1s ease-in-out;\n}\n/* resto del CSS resumido para claridad */"
+        "nombre": "Smartwatch Kronos Fit 4",
+        "precio": 89.50,
+        "imagen": "../assets/productos/smartwatch_kronos.jpeg",
+        "categoria": "Wearables",
+        "descripcion_corta": "Mide tu ritmo cardiaco y pasos con estilo.",
+        "stock": 12,
+        "estado": "activo"
     },
     {
-        "titulo": "Button",
-        "html": "<button class=\"btn\">3D button</button>",
-        "css": ".btn {\n  --color1: #1a8516;\n  --color2: #236b19;\n  perspective: 1000px;\n  padding: 1em 1em;\n  background: linear-gradient(var(--color1), var(--color2));\n  border: none;\n  outline: none;\n  font-size: 20px;\n  text-transform: uppercase;\n  letter-spacing: 4px;\n  color: #fff;\n  text-shadow: 0 10px 10px #000;\n  cursor: pointer;\n  transform: rotateX(70deg) rotateZ(30deg);\n  transform-style: preserve-3d;\n  transition: transform 0.5s;\n}\n.btn::before {\n  content: \"\";\n  width: 100%;\n  height: 15px;\n  background-color: var(--color2);\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  transform: rotateX(90deg);\n  transform-origin: bottom;\n}\n.btn::after {\n  content: \"\";\n  width: 15px;\n  height: 100%;\n  background-color: var(--color1);\n  position: absolute;\n  top: 0;\n  right: 0;\n  transform: rotateY(-90deg);\n  transform-origin: right;\n}\n.btn:hover {\n  transform: rotateX(30deg) rotateZ(0);\n}"
+        "nombre": "Laptop Ultrabook Neo 14”",
+        "precio": 729.00,
+        "imagen": "../assets/productos/laptop_neo14.jpg",
+        "categoria": "Computadoras",
+        "descripcion_corta": "Ligera, potente y lista para todo tu día.",
+        "stock": 7,
+        "estado": "activo"
     },
     {
-        "titulo": "Button 2",
-        "html": "<button><span></span>button</button>",
-        "css": "button {\n  padding: 0.9em 1.8em;\n  text-transform: uppercase;\n  text-decoration: none;\n  letter-spacing: 4px;\n  color: transparent;\n  border: 3px solid #ff0;\n  font-size: 14px;\n  position: relative;\n  font-family: inherit;\n  background: transparent;\n  cursor: pointer;\n}\n/* resto del CSS resumido para claridad */"
+        "nombre": "Teclado Mecánico RGB ProStorm",
+        "precio": 45.25,
+        "imagen": "../assets/productos/teclado_rgb_prostorm.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Ilumina tu setup con precisión y estilo.",
+        "stock": 30,
+        "estado": "activo"
     },
     {
-        "titulo": "Button 3",
-        "html": "<button class=\"button\">\n  <svg class=\"svgIcon\" viewBox=\"0 0 384 512\">\n    <path d=\"...\"></path>\n  </svg>\n</button>",
-        "css": ".button {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background-color: rgb(20, 20, 20);\n  border: none;\n  font-weight: 600;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);\n  cursor: pointer;\n  transition-duration: 0.3s;\n  overflow: hidden;\n  position: relative;\n}\n/* resto del CSS resumido para claridad */"
+        "nombre": "Cámara Web Full HD StreamCam",
+        "precio": 39.90,
+        "imagen": "img/streamcam_hd.jpg",
+        "categoria": "Cámaras",
+        "descripcion_corta": "Video en 1080p para clases, reuniones y streaming.",
+        "stock": 15,
+        "estado": "activo"
     },
     {
-        "titulo": "Card Colors",
-        "html": "<div class=\"card\">\n  <svg>...</svg>\n  <div class=\"card__content\">\n    <p class=\"card__title\">Card Title</p>\n    <p class=\"card__description\">Lorem ipsum dolor sit amet...</p>\n  </div>\n</div>",
-        "css": ".card {\n  position: relative;\n  width: 300px;\n  height: 200px;\n  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);\n}\n/* resto del CSS resumido para claridad */"
+        "nombre": "Tablet Android NovaTab 10",
+        "precio": 199.99,
+        "imagen": "img/tablet_novatab10.jpg",
+        "categoria": "Tablets",
+        "descripcion_corta": "Pantalla HD y batería de larga duración.",
+        "stock": 18,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Router WiFi 6 MeshNet AX3000",
+        "precio": 79.99,
+        "imagen": "img/router_ax3000.jpg",
+        "categoria": "Redes",
+        "descripcion_corta": "Cobertura total para tu hogar sin interrupciones.",
+        "stock": 22,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Monitor 27” IPS VisionX",
+        "precio": 189.00,
+        "imagen": "img/monitor_visionx27.jpg",
+        "categoria": "Monitores",
+        "descripcion_corta": "Resolución 2K con tecnología antirreflejo.",
+        "stock": 9,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Mouse Inalámbrico SwiftClick",
+        "precio": 19.95,
+        "imagen": "img/mouse_swiftclick.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Precisión y ergonomía en tu mano.",
+        "stock": 40,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Altavoz Bluetooth BoomGo",
+        "precio": 34.99,
+        "imagen": "img/altavoz_boomgo.jpg",
+        "categoria": "Audio",
+        "descripcion_corta": "Sonido potente con diseño compacto.",
+        "stock": 27,
+        "estado": "activo"
+    },
+    {
+        "nombre": "SSD Externo TurboDrive 1TB",
+        "precio": 109.00,
+        "imagen": "img/ssd_turbodrive.jpg",
+        "categoria": "Almacenamiento",
+        "descripcion_corta": "Transferencias ultrarrápidas en un formato pequeño.",
+        "stock": 14,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Cargador Rápido USB-C 65W",
+        "precio": 24.50,
+        "imagen": "img/cargador_usb_c.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Carga tus dispositivos al 100% en minutos.",
+        "stock": 35,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Smart TV 50'' 4K Ultra HD",
+        "precio": 479.00,
+        "imagen": "img/smarttv_4k.jpg",
+        "categoria": "Televisores",
+        "descripcion_corta": "Imagen nítida y apps integradas.",
+        "stock": 6,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Mini Proyector LED PocketBeam",
+        "precio": 149.99,
+        "imagen": "img/proyector_pocketbeam.jpg",
+        "categoria": "Proyectores",
+        "descripcion_corta": "Lleva el cine contigo a todas partes.",
+        "stock": 10,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Disco Duro Externo 2TB DriveMax",
+        "precio": 69.90,
+        "imagen": "img/disco_drive_max.jpg",
+        "categoria": "Almacenamiento",
+        "descripcion_corta": "Espacio confiable para todos tus archivos.",
+        "stock": 20,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Micrófono USB StreamMic Pro",
+        "precio": 79.99,
+        "imagen": "img/mic_streammic.jpg",
+        "categoria": "Audio",
+        "descripcion_corta": "Calidad profesional para podcasts y streams.",
+        "stock": 13,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Lámpara LED Escritorio TechGlow",
+        "precio": 29.50,
+        "imagen": "img/lampara_techglow.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Iluminación ajustable con carga inalámbrica.",
+        "stock": 17,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Controlador Gaming XCore",
+        "precio": 54.95,
+        "imagen": "img/controlador_xcore.jpg",
+        "categoria": "Gaming",
+        "descripcion_corta": "Compatibilidad total con PC y consolas.",
+        "stock": 11,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Base Enfriadora Laptop ChillPad",
+        "precio": 22.99,
+        "imagen": "img/enfriadora_chillpad.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Mantén tu portátil fresco bajo presión.",
+        "stock": 19,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Pulsera Inteligente FitBand 5",
+        "precio": 39.00,
+        "imagen": "img/fitband5.jpg",
+        "categoria": "Wearables",
+        "descripcion_corta": "Seguimiento diario de tu actividad y sueño.",
+        "stock": 21,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Auriculares Gaming RedFire 7.1",
+        "precio": 69.90,
+        "imagen": "img/auriculares_redfire.jpg",
+        "categoria": "Gaming",
+        "descripcion_corta": "Audio envolvente para sumergirte en la partida.",
+        "stock": 16,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Impresora Multifunción InkJet Pro",
+        "precio": 149.99,
+        "imagen": "img/impresora_inkjet.jpg",
+        "categoria": "Impresoras",
+        "descripcion_corta": "Imprime, escanea y copia con calidad.",
+        "stock": 8,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Kit de Limpieza Electrónica CleanTech",
+        "precio": 14.95,
+        "imagen": "img/cleantech_kit.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Mantén tus gadgets como nuevos.",
+        "stock": 40,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Cámara de Seguridad WiFi VisionGuard",
+        "precio": 59.00,
+        "imagen": "img/visionguard_cam.jpg",
+        "categoria": "Seguridad",
+        "descripcion_corta": "Vigila tu hogar desde cualquier lugar.",
+        "stock": 14,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Estación de Carga Inalámbrica 3-en-1",
+        "precio": 42.00,
+        "imagen": "img/estacion_carga.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Carga tu móvil, reloj y audífonos a la vez.",
+        "stock": 23,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Kit Luces LED RGB para Setup",
+        "precio": 18.00,
+        "imagen": "img/kit_luces_rgb.jpg",
+        "categoria": "Decoración",
+        "descripcion_corta": "Dale color y estilo a tu escritorio.",
+        "stock": 30,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Pantalla Interactiva StylusPad",
+        "precio": 299.99,
+        "imagen": "img/styluspad.jpg",
+        "categoria": "Tablets",
+        "descripcion_corta": "Dibuja, escribe y crea sin límites.",
+        "stock": 5,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Mini PC CubeBox Pro",
+        "precio": 229.00,
+        "imagen": "img/minipc_cubebox.jpg",
+        "categoria": "Computadoras",
+        "descripcion_corta": "Potente y compacta para cualquier espacio.",
+        "stock": 10,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Antena WiFi USB LongRange",
+        "precio": 14.00,
+        "imagen": "img/antena_wifi.jpg",
+        "categoria": "Redes",
+        "descripcion_corta": "Mejora la señal en segundos.",
+        "stock": 33,
+        "estado": "activo"
+    },
+    {
+        "nombre": "Batería Portátil PowerMax 20,000mAh",
+        "precio": 38.99,
+        "imagen": "img/powermax20000.jpg",
+        "categoria": "Accesorios",
+        "descripcion_corta": "Energía portátil para días enteros.",
+        "stock": 26,
+        "estado": "activo"
     }
 ]

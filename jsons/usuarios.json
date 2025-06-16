@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Ana Pérez",
+        "email": "ana@example.com",
+        "rol": "Administrador",
+        "contrasena": "1234"
+    },
+    {
+        "nombre": "Carlos Ruiz",
+        "email": "carlos@example.com",
+        "rol": "Usuario",
+        "contrasena": "1234"
+    },
+    {
+        "nombre": "Laura Gómez",
+        "email": "laura@example.com",
+        "rol": "Editor",
+        "contrasena": "1234"
+    }
+]
